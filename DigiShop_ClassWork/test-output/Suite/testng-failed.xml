@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://demowebshop.tricentis.com/"/>
+    <classes>
+      <class name="DWTestCase.DWTestCaseTest">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="book_001"/>
+          <include name="beforesuite"/>
+          <include name="beforemethod"/>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- DWTestCase.DWTestCaseTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
